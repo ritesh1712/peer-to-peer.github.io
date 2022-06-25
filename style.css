@@ -1,0 +1,1683 @@
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kavoon&family=Patrick+Hand&family=Roboto+Flex:opsz,wght@8..144,100;8..144,400&family=Sora&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Sora";
+    color: white;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top {
+    width: 95%;
+    justify-content: space-between;
+}
+
+.H-cantaner {
+    height: 53rem;
+    width: 95%;
+    align-items: flex-start;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    margin: auto;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.H-cantaner .logo img {
+    height: 7.5rem;
+    padding-top: 1rem;
+}
+
+.navbar {
+    width: 70%;
+    height: 7rem;
+}
+
+.navbar .Menu {
+    float: right;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.navbar .Menu li a {
+    font-size: 1.05rem;
+    text-decoration: none;
+    padding: 0px 1rem;
+    color: white;
+    font-weight: bold;
+
+}
+
+.navbar .Menu .circle {
+    border: 2px solid green;
+    border-radius: 50%;
+    height: 4px;
+    width: 4px;
+}
+
+.navbar .Menu li:nth-child(10) {
+    border: 4px solid #f42ba5;
+    padding: .5rem 0px;
+    border-radius: 10px;
+    height: 1.5rem;
+}
+
+.navbar ul li:nth-child(10):hover {
+    background-color: #f42ba5;
+    transition: all .3s ease;
+}
+
+.navbar ul li:nth-child(11) {
+    background: rgba(0, 255, 255, 1);
+    list-style: none;
+    padding: .5rem 0px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    height: 2rem;
+}
+
+
+.navbar ul li:nth-child(11):hover {
+    background: rgba(0, 255, 255, 0.9);
+}
+
+.navbar ul li a:hover::before {
+    content: '';
+    height: 3px;
+    width: 2%;
+    background-color: green;
+    position: absolute;
+    top: 50px;
+    margin-left: 35px;
+
+
+}
+
+.navbar ul li:nth-child(7) a:hover::before {
+    margin-left: 10px;
+
+}
+
+.navbar ul li:nth-child(9) a:hover::before {
+    margin-left: 10px;
+}
+
+.navbar ul li:nth-child(10) a:hover::before {
+    width: 0;
+}
+
+.navbar ul li:nth-child(11) a:hover::before {
+    width: 0;
+}
+
+.navbar ul li:nth-child(11) a {
+    color: black;
+}
+
+.Menu .sub-menu {
+    position: absolute;
+    background-color: white;
+    color: black;
+    top: 70px;
+    left: 650px;
+    width: 10rem;
+    height: 1.5rem;
+    justify-content: flex-start;
+    padding-left: 1rem;
+    padding-top: .8rem;
+    font-size: 1.05rem;
+    border-radius: 5px;
+    display: none;
+
+}
+
+.Menu .sub-menu .squre {
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    top: -40px;
+    left: 60px;
+    transform: rotate(45deg);
+}
+
+.navbar ul li:nth-child(7) i {
+    display: none;
+    z-index: 2;
+    color: black;
+}
+
+.navbar ul li:nth-child(7):hover .sub-menu,
+.squre {
+    display: block;
+}
+
+.right {
+    color: white;
+    height: 7rem;
+    margin-left: 1rem;
+    ;
+}
+
+.right .num {
+    font-size: 2rem;
+    font-family: "Kavoon";
+}
+
+.right .text {
+    float: right;
+}
+
+#ham {
+    display: none;
+}
+
+.H-cantaner::before {
+    content: '';
+    background: url(images/bg.jpg) no-repeat center center/cover;
+    height: 53rem;
+    width: 95%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    opacity: .8;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.H-cantaner .cantant {
+    position: absolute;
+    align-self: center;
+    flex-direction: column;
+    z-index: 0;
+    margin-top: 8rem;
+
+}
+
+.H-cantaner .cantant h1 {
+    font-family: "Kavoon";
+    font-size: 6rem;
+    width: 50%;
+    text-align: center;
+}
+
+.H-cantaner .cantant p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: 56%;
+    text-align: center;
+}
+
+.H-cantaner .percent {
+    margin-top: 4rem;
+    width: 80%;
+}
+
+.H-cantaner .percent .num {
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.H-cantaner .percent .unfill {
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    margin-top: 1rem;
+}
+
+.H-cantaner .percent .fill {
+    background-color: rgba(255, 255, 255);
+    width: 10%;
+    border-radius: 20px;
+}
+
+.H-cantaner .cantant .buttons {
+    position: relative;
+    bottom: -8.5rem;
+}
+
+.H-cantaner .cantant .buttons .btn {
+    color: black;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    padding: 1.1rem;
+    font-weight: bold;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.H-cantaner .cantant .buttons .btn:nth-child(1) {
+    background-color: rgb(218, 218, 218);
+    border: 4px solid #f42ba5;
+}
+
+.H-cantaner .cantant .buttons .btn:nth-child(1):hover {
+    background-color: #f42ba5;
+    transition: all .5s ease;
+}
+
+.H-cantaner .cantant .buttons .btn:nth-child(2) {
+    background-color: rgba(0, 255, 255, 1);
+    border: 4px solid rgba(0, 255, 255);
+}
+
+.H-cantaner .cantant .buttons .btn:nth-child(2):hover {
+    background-color: rgba(0, 255, 255, 0.9);
+    transition: all .5s ease;
+}
+
+.sec-1 {
+    flex-direction: column;
+    background: rgb(240, 240, 240, 0.8);
+    width: 80vw;
+    margin: auto;
+    margin-top: 100px;
+    padding-bottom: 2rem;
+}
+
+.sec-1 .top-num {
+    background-color: rgb(7, 65, 7);
+    width: 80vw;
+    height: 3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    justify-content: space-around;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.sec-1 .top-num .num {
+    border-left: 3px solid rgba(255, 255, 255, 0.15);
+    width: 100%;
+    height: 3rem;
+}
+
+.sec-1 .top-num .num:first-child {
+    background-color: green;
+    border-top-left-radius: 20px;
+    border: none;
+}
+
+.sec-1 .top-num #last:last-child {
+    display: none;
+}
+
+.sec-1 .hading {
+    flex-direction: column;
+    margin-top: 2rem;
+    line-height: 3.5rem;
+}
+
+.sec-1 .hading h1 {
+    font-size: 3rem;
+    font-family: "Kavoon";
+    color: #161646;
+}
+
+.sec-1 .hading p {
+    color: black;
+    font-size: 1.1rem;
+}
+
+
+.sec-1 .tickets .item {
+    justify-content: space-between;
+    width: 80vw;
+    margin: auto;
+}
+
+.sec-1 .tickets .item img {
+    height: 5rem;
+}
+
+.sec-1 .tickets .text h2 {
+    color: black;
+}
+
+.sec-1 .tickets .text p,
+.text span {
+    color: black;
+    opacity: .7;
+    font-size: .8rem;
+}
+
+.sec-1 .tickets .text span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.sec-1 .tickets .text div {
+    color: blue;
+    font-size: .9rem;
+}
+
+.sec-1 .tickets .item .right {
+    width: 20%;
+}
+
+.sec-1 .tickets .item .right span {
+    color: black;
+    margin: 1rem;
+    padding: .5rem;
+    width: 1.2rem;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+.sec-1 .tickets .item .right span:nth-child(2) {
+    border: none;
+}
+
+.sec-1 .tickets .item .right span:nth-child(1) {
+    cursor: pointer;
+    opacity: 0.2;
+}
+
+.sec-1 .tickets .item .right span:nth-child(3) {
+    cursor: pointer;
+}
+
+.sec-1 .tickets #btn {
+    color: black;
+    background-color: #f42ba497;
+    width: 95%;
+    margin: auto;
+    height: 4rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.sec-2 {
+    flex-direction: column;
+}
+
+.sec-2 .top-hading {
+    color: black;
+    background-color: rgba(1, 207, 1, 0.2);
+    padding: 0.2rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+
+}
+
+.sec-2 .percent {
+    width: 80%;
+}
+
+.sec-2 .percent .num {
+    justify-content: space-between;
+}
+
+.sec-2 .percent .left,
+.percent .right {
+    flex-direction: column;
+    line-height: 2.5rem;
+}
+
+.sec-2 .percent .num .left div,
+.percent .right div {
+    color: #161646;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.sec-2 .percent .unfill {
+    background-color: #f42ba438;
+    height: 2rem;
+    border-radius: 20px;
+}
+
+.sec-2 .percent .unfill .fill {
+    background-color: #f42ba5;
+    border-radius: 20px;
+    height: 100%;
+    color: #f42ba5;
+    width: 10%;
+}
+
+.sec-2 .cantanar {
+    justify-content: space-between;
+    width: 80%;
+}
+
+.sec-2 .cantanar .item {
+    flex-direction: column;
+    width: 30%;
+}
+
+.sec-2 .cantanar .item p {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sec-2 .cantanar .item p span {
+    color: green;
+    font-weight: bold;
+}
+
+.sec-2 .cantanar .item h2 {
+    text-align: center;
+    font-family: "Kavoon";
+    color: #161646;
+    font-size: 2.4rem;
+}
+
+.sec-3 {
+    top: 5rem;
+    flex-direction: column;
+    margin: auto;
+    height: 53rem;
+    background-color: rgba(0, 255, 255, 0.1);
+}
+
+.sec-3 .top-hading {
+    background-color: rgb(2, 127, 2);
+    border-radius: 20px;
+    padding: 0.3rem 1rem;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+}
+
+.sec-3 .hading {
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.sec-3 .hading h2 {
+    color: #161646;
+    font-family: "Kavoon";
+    font-size: 3rem;
+}
+
+.sec-3 .hading p {
+    color: green;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.sec-3 .hading .p {
+    width: 80%;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.sec-3 .cantanar {
+    justify-content: space-between;
+}
+
+.sec-3 .cantanar .left {
+    flex-direction: column;
+    width: 55%;
+    margin-top: 2rem;
+    align-items: flex-start;
+    margin-left: 5rem;
+}
+
+.sec-3 .cantanar .left p {
+    color: green;
+    margin: 1rem;
+    font-size: 1.2rem;
+}
+
+.sec-3 .cantanar .left p .bold {
+    color: rgb(6, 96, 6);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.sec-3 .cantanar .left .btn {
+    margin-left: 1rem;
+    background-color: rgb(6, 96, 6);
+    padding: 1rem;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+}
+
+.sec-3 .cantanar .left .btn:hover {
+    background-color: rgba(0, 128, 0, 0.8);
+    color: black;
+    transition: all 0.5s ease;
+}
+
+.sec-3 .cantanar .right {
+    margin-top: 4rem;
+    width: 50%;
+}
+
+.sec-3 .cantanar .right img {
+    width: 80%;
+    border-radius: 20px;
+}
+
+.sec-4 {
+    background: url(images/slid-bg.jpg) no-repeat center center/cover;
+    height: 60rem;
+    width: 90vw;
+    margin: auto;
+    background-attachment: fixed;
+    flex-direction: column;
+    position: relative;
+    top: -3rem;
+    border-radius: 20px;
+}
+
+.sec-4 .top {
+    background-color: #f42ba5;
+    color: black;
+    border-radius: 20px;
+    padding: 0.3rem 1rem;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    width: 22%;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.sec-4 .num {
+    font-size: 5.5rem;
+    font-family: "Kavoon";
+}
+
+.sec-4 .cantanar {
+    width: 80%;
+    height: 60%;
+}
+
+.sec-4 .cantanar input {
+    width: 93%;
+    font-size: 1.2rem;
+    padding: 1rem;
+    color: #1b1847;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-style: italic;
+}
+
+.sec-4 .cantanar .searchicon {
+    color: black;
+    position: relative;
+    left: 25rem;
+    bottom: 2.5rem;
+}
+
+.sec-4 .cantanar img {
+    height: 5rem;
+    border-radius: 50%;
+    width: 5rem;
+    cursor: pointer;
+}
+
+.sec-4 .cantanar img:hover {
+    box-shadow: 2px 2px 10px black;
+}
+
+.sec-4 .cantanar .item {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: .3rem;
+}
+
+.sec-4 .cantanar .item .text {
+    align-items: flex-start;
+    color: #1b1847;
+    flex-direction: column;
+    line-height: 2rem;
+}
+
+.sec-4 .cantanar .item .num {
+    font-size: 1.2rem;
+}
+
+.sec-4 .cantanar .item h1 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.sec-4 .cantanar .percent {
+    width: 17rem;
+}
+
+.sec-4 .item .percent .unfill {
+    background-color: #f42ba44c;
+    width: 100%;
+    height: 1rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.sec-4 .item .percent .unfill .fill {
+    color: #f42ba5;
+    width: 100%;
+    background-color: #f42ba5;
+    height: 1rem;
+    border-radius: 20px;
+}
+
+.sec-4 .left #Litem-1 .item:nth-child(3) .unfill .fill {
+    width: 30%;
+    height: 1rem;
+}
+
+.sec-4 .left #Litem-1 .item:nth-child(4) .unfill .fill {
+    width: 65%;
+    height: 1rem;
+}
+
+.sec-4 .left #Litem-2 .item:nth-child(1) .unfill .fill {
+    width: 40%;
+}
+
+.sec-4 .left #Litem-2 .item:nth-child(3) .unfill .fill {
+    width: 30%;
+}
+
+.sec-4 .left #Litem-2 .item:nth-child(4) .unfill .fill {
+    width: 25%;
+}
+
+.sec-4 .right #Ritem-1 .item:nth-child(1) .unfill .fill {
+    width: 20%;
+    height: 1rem;
+}
+
+.sec-4 .right #Ritem-1 .item:nth-child(2) .unfill .fill {
+    width: 30%;
+    height: 1rem;
+}
+
+.sec-4 .right #Ritem-1 .item:nth-child(3) .unfill .fill {
+    width: 60%;
+    height: 1rem;
+}
+
+.sec-4 .right #Ritem-1 .item:nth-child(4) .unfill .fill {
+    width: 0%;
+    height: 1rem;
+}
+
+.sec-4 .right #Ritem-2 .unfill .fill {
+    width: 0%;
+}
+
+.sec-4 .cantanar .buttons {
+    float: right;
+    height: 2.3rem;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.sec-4 .cantanar .buttons i {
+    color: black;
+    cursor: pointer;
+}
+
+.sec-4 .cantanar .buttons #Lbtn-1 {
+    opacity: 0.2;
+}
+
+.sec-4 .cantanar .buttons #Rbtn-1 {
+    opacity: 0.2;
+}
+
+.sec-4 .left,
+.sec-4 .right {
+    background-color: white;
+    height: 80%;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.sec-4 #Litem-2 {
+    display: none;
+}
+
+.sec-4 #Ritem-2 {
+    display: none;
+}
+
+.sec-4 #buttons {
+    position: relative;
+    top: 5rem;
+}
+
+.sec-4 #buttons .btn {
+    padding: 0.8rem;
+    color: black;
+    font-weight: bold;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    border: none;
+    margin-right: 1rem;
+}
+
+.sec-4 #buttons .btn-1 {
+    background-color: #f42ba5;
+}
+
+.sec-4 #buttons .btn-2 {
+    color: #1b1847;
+    background-color: rgba(0, 255, 255, 1);
+}
+
+.sec-4 #buttons .btn-2:hover {
+    background-color: rgba(0, 255, 255, 0.9);
+}
+
+.sec-4 #buttons .btn-1:hover {
+    background-color: #e960b2;
+}
+
+.sec-5 {
+    flex-direction: column;
+    margin-top: 3rem;
+    width: 95%;
+    margin: auto;
+}
+
+.sec-5 .top-hading {
+    flex-direction: column;
+}
+
+.sec-5 .top-hading h1 {
+    font-size: 3rem;
+    color: #161646;
+    width: 60%;
+    text-align: center;
+    font-family: "Kavoon";
+}
+
+.sec-5 .top-hading p {
+    font-size: 1.4rem;
+    color: green;
+    width: 70%;
+    text-align: center;
+}
+
+.sec-5 .cantanar {
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.sec-5 .cantanar .item {
+    width: 30%;
+    flex-direction: column;
+}
+
+.sec-5 .cantanar .item h1 {
+    font-size: 2rem;
+    color: #161646;
+    text-align: center;
+    font-family: "Kavoon";
+    width: 70%;
+    margin: auto;
+}
+
+.sec-5 .cantanar .item p {
+    font-size: 1.2rem;
+    color: green;
+    text-align: center;
+}
+
+.sec-6 {
+    background-color: #45456a29;
+    margin-top: 4rem;
+    height: 30rem;
+    justify-content: space-between;
+}
+
+.sec-6 .left {
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.sec-6 .left h1 {
+    font-size: 3rem;
+    font-family: "Kavoon";
+    width: 70%;
+    color: #161646;
+}
+
+.sec-6 .left p {
+    margin: 1rem;
+    width: 80%;
+    color: green;
+}
+
+.sec-6 .left p .bold {
+    color: rgb(3, 80, 3);
+    font-weight: bold;
+}
+
+.sec-6 .right {
+    width: 50%;
+    height: 100%;
+}
+
+.sec-6 .right iframe {
+    border-radius: 20px;
+    border: 2px solid green;
+    width: 100%;
+    height: 60%;
+    margin: auto;
+}
+
+.sec-7 {
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.sec-7 .top {
+    background-color: #f42ba5;
+    color: black;
+    border-radius: 20px;
+    padding: 0.3rem 1rem;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    width: 22%;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.sec-7 .cantanar {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.sec-7 .cantanar .item {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.sec-7 .cantanar .item .circle {
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-right: 0.5rem;
+    border-radius: 50%;
+    color: rgba(0, 0, 0, 0);
+    font-size: 2rem;
+}
+
+footer {
+    background-color: #161646;
+    width: 95%;
+    height: 10rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 2rem;
+}
+
+footer .item {
+    width: 30%;
+}
+
+footer .logo img {
+    height: 6rem;
+}
+
+footer .socale {
+    flex-direction: column;
+}
+
+footer .socale .icon img {
+    height: 3rem;
+    border-radius: 5px;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+footer .socale .icon img:hover {
+    opacity: 0.85;
+}
+
+footer .socale .link span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+footer .socale .link {
+    flex-wrap: wrap;
+}
+
+footer .buttons {
+    flex-direction: column;
+}
+
+footer .buttons .btn {
+    padding: 0.3rem 0.5rem;
+    margin: 0.5rem;
+    font-size: 1.1rem;
+    color: #161646;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+footer .buttons .btn-1 {
+    border: 3px solid white;
+    background-color: #161646;
+    color: white;
+}
+
+footer .buttons .btn-1:hover {
+    background-color: white;
+    color: #161646;
+    transition: all 0.5 ease;
+
+}
+
+footer .buttons .btn-2 {
+    border: 3px solid #f42ba5;
+    background-color: #f42ba5;
+
+}
+
+footer .buttons .btn-2:hover {
+    background-color: #f42ba4d3;
+    border: 3px solid #f42ba4d3;
+
+}
+
+footer .buttons .a {
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+footer .buttons .a:hover {
+    text-decoration: underline;
+
+}
+
+
+@media (max-width:1024px) {
+
+    .H-cantaner {
+        width: 100vw;
+    }
+
+    .H-cantaner::before {
+        width: 100vw;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .right {
+        margin-right: 50px;
+    }
+
+    #ham {
+        background-color: white;
+        position: fixed;
+        right: 0px;
+        top: 20px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    #ham i {
+        font-size: 2.5rem;
+        color: #f42ba5;
+        position: relative;
+    }
+
+    #ham {
+        display: block;
+        cursor: pointer;
+        padding: .3rem;
+        z-index: 1;
+    }
+
+    .navbar .Menu {
+        flex-direction: column;
+        background-color: white;
+        width: 100vw;
+        height: 35rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        line-height: 3rem;
+        z-index: 1;
+        position: fixed;
+    }
+
+    .navbar .Menu li a {
+        color: black;
+    }
+
+    .navbar .Menu li:nth-child(10) {
+        margin-bottom: 2rem;
+        width: 80%;
+        height: 5%;
+    }
+
+    .navbar .Menu li:nth-child(11) {
+        width: 80%;
+        height: 5%;
+    }
+
+    .navbar .Menu .circle {
+        display: none;
+    }
+
+    .navbar ul li a:hover::before {
+        background-color: white;
+    }
+
+    .Menu .sub-menu {
+        padding-top: 0px;
+        height: 5%;
+        font-weight: bold;
+        left: 45%;
+        top: 50%;
+    }
+
+    .navbar ul li:nth-child(7) {
+        width: 80%;
+    }
+
+    .navbar ul li:nth-child(7) a {
+        width: 100%;
+        position: relative;
+        left: 20px;
+    }
+
+    .Menu .sub-menu .squre {
+        display: none;
+    }
+
+    .navbar ul li:nth-child(7) i {
+        font-size: 2.5rem;
+        display: block;
+        z-index: 2;
+        justify-self: end;
+    }
+
+    .H-cantaner .cantant .buttons {
+        bottom: -10rem;
+    }
+
+    .H-cantaner .cantant h1 {
+        width: 80%;
+        font-size: 4.5rem;
+    }
+
+    .sec-1 .tickets .item .right span {
+        height: .7rem;
+    }
+
+    .sec-2 .percent .right {
+        position: relative;
+        right: -50px;
+    }
+
+    .sec-4 .cantanar .percent {
+        width: 11rem;
+    }
+
+    .sec-4 .cantanar input {
+        width: 90%;
+    }
+
+    .sec-4 .cantanar .searchicon {
+        left: 15rem;
+    }
+
+    footer {
+        height: 15rem;
+    }
+
+}
+
+
+@media (max-width:780px) {
+
+    html {
+        font-size: 80%;
+    }
+
+    .navbar .Menu {
+        height: 50rem;
+    }
+
+    .H-cantaner .cantant h1 {
+        width: 80%;
+        font-size: 4.5rem;
+    }
+
+    .H-cantaner::before {
+        width: 100vw;
+    }
+
+    .H-cantaner {
+        width: 100vw;
+    }
+
+    .H-cantaner .cantant .buttons {
+        top: 10rem;
+    }
+
+    .sec-4 {
+        height: 120rem;
+    }
+
+    .sec-4 .cantanar {
+        flex-direction: column;
+    }
+
+    .sec-4 .cantanar .left {
+        width: 30rem;
+        margin: 5rem;
+        margin-top: 15rem;
+
+    }
+
+    .sec-4 .cantanar .right {
+        width: 30rem;
+        margin: auto;
+    }
+
+    .sec-4 .cantanar .item h1 {
+        font-size: 2rem;
+    }
+
+    .sec-4 .cantanar .item .num {
+        font-size: 1.5rem;
+    }
+
+    .sec-4 #buttons {
+        top: 15rem;
+    }
+
+    .sec-4 #buttons .btn {
+
+        font-size: 2.5rem;
+    }
+
+    .sec-4 .cantanar .searchicon {
+        left: 27rem;
+    }
+
+    .sec-4 .cantanar input {
+        font-size: 2rem;
+        width: 93%;
+    }
+
+    .sec-4 .top {
+        font-size: 2rem;
+        width: 40%;
+    }
+
+    .sec-4 .cantanar .percent {
+        width: 20rem;
+    }
+
+    .sec-5 .cantanar {
+        flex-direction: column;
+
+    }
+
+    .sec-5 .cantanar .item {
+        width: 80%;
+    }
+
+    .sec-6 {
+        flex-direction: column;
+        height: 50rem;
+    }
+
+    .sec-6 .left {
+        width: 100%;
+    }
+
+    .sec-6 .right {
+        width: 80%;
+    }
+
+    .sec-6 .right iframe {
+        height: 80%;
+    }
+
+    .sec-7 .cantanar {
+        flex-direction: column;
+    }
+
+    .sec-7 .cantanar .item {
+        padding: 1rem;
+        font-size: 2rem;
+    }
+
+    .sec-7 .cantanar .item .circle {
+        font-size: 2rem;
+    }
+
+}
+
+
+@media (max-width:630px) {
+
+    html {
+        font-size: 60%;
+    }
+
+    .H-cantaner::before {
+        height: 52rem;
+    }
+
+    .H-cantaner {
+        height: 52rem;
+    }
+
+    .H-cantaner .cantant p {
+        font-size: 1.8rem;
+    }
+
+    .H-cantaner .right .text,
+    .right .num {
+        font-size: 2.5rem;
+    }
+
+    .H-cantaner .cantant {
+        margin-top: 10rem;
+    }
+
+    .H-cantaner .cantant .num {
+        font-size: 2rem;
+    }
+
+    #ham i {
+        font-size: 4rem;
+    }
+
+    .navbar ul li:nth-child(7) i {
+        font-size: 4rem;
+    }
+
+    .H-cantaner .cantant .buttons {
+        top: 5rem;
+    }
+
+    .navbar .Menu li a {
+        font-size: 2rem;
+        line-height: 6rem;
+    }
+
+    .Menu .sub-menu {
+        font-size: 2rem;
+        top: 55%;
+    }
+
+    .sec-1 .top-num .num {
+        font-size: 2rem;
+    }
+
+    .sec-1 .tickets .item img {
+        height: 7rem;
+    }
+
+    .sec-1 .tickets .text h2 {
+        font-size: 1.8rem;
+    }
+
+    .sec-1 .tickets .text p,
+    .text span {
+        font-size: 1.3rem;
+    }
+
+    .sec-1 .tickets .text div {
+        font-size: 1.3rem;
+    }
+
+    .sec-1 .tickets .item .right span {
+        font-size: 2rem;
+    }
+
+    .H-cantaner .cantant .buttons .btn {
+        font-size: 2rem;
+    }
+
+    .H-cantaner .cantant .buttons .btn:nth-child(1) {
+        border: 2px solid #f42ba5;
+    }
+
+    .sec-2 .top-hading {
+        font-size: 1.5rem;
+    }
+
+    .sec-2 .cantanar {
+        flex-direction: column;
+    }
+
+    .sec-2 .cantanar .item h2 {
+        font-size: 4rem;
+        width: 300%;
+    }
+
+    .sec-2 .cantanar .item p {
+        font-size: 2rem;
+        width: 300%;
+    }
+
+    .sec-3 .cantanar {
+        flex-direction: column;
+    }
+
+    .sec-3 {
+        height: 100rem;
+    }
+
+    .sec-3 .cantanar .right {
+        margin: auto;
+        width: 80%;
+        margin-top: 15rem;
+    }
+
+    .sec-3 .hading h2 {
+        font-size: 4rem;
+    }
+
+    .sec-3 .hading p {
+        font-size: 1.5rem;
+    }
+
+    .sec-3 .cantanar .left p {
+        font-size: 1.5rem;
+    }
+
+    .sec-3 .cantanar .left p .bold {
+        font-size: 1.5rem;
+    }
+
+    .sec-3 .cantanar .left .btn {
+        font-size: 2.3rem;
+    }
+
+    .sec-3 .top-hading {
+        font-size: 1.8rem;
+    }
+
+    .sec-5 .top-hading p {
+        font-size: 2rem;
+    }
+
+    .sec-5 .top-hading h1 {
+        font-size: 4rem;
+        width: 80%;
+    }
+
+    .sec-5 .cantanar .item p {
+        font-size: 2rem;
+    }
+
+    .sec-5 .cantanar .item h1 {
+        font-size: 3rem;
+    }
+
+    .sec-6 .left h1 {
+        font-size: 4rem;
+    }
+
+    .sec-6 .left p {
+        font-size: 2rem;
+    }
+
+    .sec-7 .top {
+        font-size: 2rem;
+        width: 40%;
+    }
+
+    .sec-7 .cantanar .item {
+        padding: 1rem;
+        font-size: 4rem;
+    }
+
+    .sec-7 .cantanar .item .circle {
+        font-size: 4rem;
+    }
+
+    footer {
+        flex-direction: column;
+        height: 30rem;
+        padding: 2rem;
+        width: 90%;
+    }
+
+    footer .logo img {
+        height: 8rem;
+    }
+
+    footer .item {
+        width: 100%;
+
+    }
+
+    footer .item .link {
+        font-size: 2rem;
+    }
+
+    footer .buttons .btn {
+        font-size: 2rem;
+    }
+
+    footer .buttons .a {
+        font-size: 2rem;
+    }
+
+}
+
+
+@media (max-width:460px) {
+
+    html {
+        font-size: 45%;
+    }
+
+    .navbar .Menu {
+        height: 80rem;
+    }
+
+    .H-cantaner .cantant h1 {
+        margin-top: 10rem;
+    }
+
+    .H-cantaner::before {
+        height: 57rem;
+    }
+
+    .H-cantaner {
+        height: 57rem;
+    }
+
+    .H-cantaner .cantant .buttons {
+        top: 3rem;
+    }
+
+    .Menu .sub-menu {
+        top: 50%;
+    }
+
+    .sec-1 {
+        margin-top: 50px;
+    }
+
+    .sec-4 .cantanar .left {
+        width: 40rem;
+    }
+
+    .sec-4 .cantanar .right {
+        width: 40rem;
+    }
+
+    .sec-4 .cantanar .item h1 {
+        font-size: 2.5rem;
+    }
+
+    .sec-4 .cantanar .item .num {
+        font-size: 2rem;
+    }
+
+    .sec-4 .cantanar .searchicon {
+        left: 34rem;
+        top: -4rem;
+    }
+
+    .sec-4 .cantanar input {
+        font-size: 3rem;
+        width: 95%;
+    }
+
+    .sec-4 .cantanar .percent {
+        width: 25rem;
+    }
+
+    .sec-4 .cantanar .item img {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .sec-4 {
+        height: 180rem;
+    }
+
+    .sec-4 #buttons {
+        top: 27rem;
+    }
+
+    .sec-6 {
+        height: 60rem;
+    }
+
+}
+
+
+@media (max-width:360px) {
+
+    html {
+        font-size: 35%;
+    }
+
+    .navbar .Menu {
+        height: 100rem;
+    }
+
+    .H-cantaner {
+        height: 60rem;
+    }
+
+    .H-cantaner::before {
+        height: 60rem;
+    }
+
+    .H-cantaner .logo img {
+        height: 10rem;
+    }
+
+    .H-cantaner .right .num,
+    .text {
+        font-size: 4rem;
+    }
+
+    .H-cantaner .cantant h1 {
+        width: 100%;
+        font-size: 6rem;
+    }
+
+    .H-cantaner .cantant p {
+        width: 80%;
+        font-size: 2rem;
+    }
+
+    .H-cantaner .cantant .percent .num {
+        font-size: 2.5rem;
+
+    }
+
+    .H-cantaner .cantant .buttons .btn {
+        font-size: 2.5rem;
+    }
+
+    .navbar .Menu li a {
+        font-size: 3rem;
+        line-height: 10rem;
+    }
+
+    .Menu .sub-menu {
+        font-size: 3rem;
+        top: 55%;
+    }
+
+    .sec-2 .percent .num .left div,
+    .num .right div {
+        font-size: 2rem;
+    }
+
+    .sec-3 .hading p {
+        font-size: 2rem;
+    }
+
+    .sec-3 .cantanar .left p,
+    .sec-3 .cantanar .left p .bold {
+        font-size: 2.5rem;
+    }
+
+    .sec-3 {
+        height: 125rem;
+    }
+
+    .sec-5 .top-hading p {
+        font-size: 2.5rem;
+    }
+
+    .sec-5 .top-hading h1 {
+        font-size: 5rem;
+        width: 80%;
+    }
+
+    .sec-5 .cantanar .item p {
+        font-size: 2.5rem;
+    }
+
+    .sec-5 .cantanar .item h1 {
+        font-size: 4rem;
+    }
+
+    .sec-6 .left h1 {
+        font-size: 5rem;
+    }
+
+    .sec-6 .left p {
+        font-size: 2.5rem;
+    }
+
+    .sec-6 {
+        height: 80rem;
+    }
+
+}

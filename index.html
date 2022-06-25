@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>peer-to-peer</title>
+</head>
+
+<body>
+    <header class="H-cantaner flex">
+        <div class="top flex">
+
+            <div class="logo"><img src="images/logo.jpg" alt="logo"></div>
+            <nav class="navbar" id="show">
+
+                <ul class="Menu flex">
+                    <li><a href="#">How it works</a></li><span class="circle"></span>
+                    <li><a href="#">Why do it</a> </li> <span class="circle"></span>
+                    <li><a href="#">Resources</a> </li> <span class="circle"></span>
+                    <!-- <i class="material-icons" id="ham-menu" onclick="menushow()">menu</i> -->
+                    <li class="flex"><a class="flex" id="a" href="#">FAQs</a>
+                        <i class="material-icons" id="more" onclick="showmore()">expand_more</i>
+                        <i class="material-icons" id="more-close" onclick="hidemore()">close</i>
+                        <div class="sub-menu flex" id="sub">Blog <span class="squre"></span></div>
+                    </li> <span class="circle"></span>
+                    <li><a href="#">Login</a></li>
+                    <li class="flex"><a href="#">Donate</a></li>
+                    <li class="flex"><a href="#">Sing up</a></li>
+                </ul>
+            </nav>
+            <div class="right">
+                <div class="num">$21,588</div>
+                <div class="text">RAISED</div>
+            </div>
+            <div id="ham" class="flex">
+                <i class="material-icons" id="ham-menu" onclick="menushow()">menu</i>
+                <i class="material-icons" id="ham-close" onclick="menuhide()">close</i>
+                <!-- <iclass="material-icons">close</i> -->
+            </div>
+        </div>
+        <div class="cantant flex">
+            <h1>Go paws-first
+                for lost dogs</h1>
+            <p> Together let's get fitter with our furry friends and turn those walkies
+                into fundraising dollars for animal rescue shelters across the
+                country. </p>
+            <div class="percent">
+                <div class="num flex">
+                    <div>$21,588 raised</div>
+                    <div>$250,000 goal</div>
+                </div>
+                <div class="unfill">
+                    <div class="fill">r</div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="btn">Donate</button>
+                <button class="btn">Sing up</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="sec-1 flex">
+        <div class="top-num flex">
+            <span class="num flex">1</span>
+            <span class="num flex">2</span>
+            <span class="num flex">3</span>
+            <span class="num flex">4</span>
+            <span class="num flex">5</span>
+            <span class="num flex" id="last">6</span>
+        </div>
+        <div class="hading flex">
+            <h1>Select your tickets</h1>
+            <p>Choose a ticket below</p>
+        </div>
+        <div class="tickets">
+            <div class="item flex">
+                <div class="left flex">
+                    <img src="images/ticket.jpg" alt="ticket">
+                    <div class="text">
+                        <h2>General</h2>
+                        <p>Ages 13+</p>
+                        <!-- <a href="#" id="hide-1">hide info</a> -->
+                        <span id="hide-1"> hide info</span>
+
+                        <div>$50</div>
+                    </div>
+                </div>
+                <div class="right flex">
+                    <span class="flex" id="dic-1">-</span>
+                    <span class="flex" id="num-1"></span>
+                    <span class="flex" id="inc-1">+</span>
+                </div>
+            </div>
+            <div class="item flex">
+                <div class="left flex">
+                    <img src="images/ticket.jpg" alt="ticket">
+                    <div class="text">
+                        <h2>Child</h2>
+                        <p>Ages 4-12 (3 and under is free)</p>
+                        <span id="hide-2"> hide info</span>
+                        <!-- <a href="#" id="hide-2">hide info</a> -->
+                        <div>$15</div>
+                    </div>
+                </div>
+                <div class="right flex">
+                    <span class="flex" id="dic-2">-</span>
+                    <span class="flex" id="num-2"></span>
+                    <span class="flex" id="inc-2">+</span>
+                </div>
+            </div>
+            <div id="btn" class="flex">Next</div>
+        </div>
+
+
+    </section>
+
+
+    <section class="sec-2 flex">
+        <div class="top-hading flex">
+            HOW IT WORKS
+        </div>
+        <div class="percent">
+            <div class="num flex">
+                <div class="left flex">
+                    <div>2158 Miles</div>
+                    <div>$21,588 raised</div>
+                </div>
+                <div class="right flex">
+                    <div>25000 Miles</div>
+                    <div>$250,000 goal</div>
+                </div>
+            </div>
+            <div class="unfill">
+                <div class="fill flex">r</div>
+            </div>
+        </div>
+        <div class="cantanar flex">
+            <div class="item flex"><img src="images/item1.jpg" alt="img">
+                <h2 class="flex">Sign up</h2>
+                <p class="flex">Register you and your dog (they'll get featured on your profile page). Then get
+                    fundraising for some great treats for both of you</p>
+            </div>
+            <div class="item flex"><img src="images/item2.jpg" alt="img">
+                <h2 class="flex">Take the lead</h2>
+                <p>Pledge a distance to walk over the month of July, put your best feet paw-ward and get walking.</p>
+            </div>
+            <div class="item flex"><img src="images/item3.jpg" alt="img">
+                <h2 class="flex">Get Fundraising</h2>
+                <p>Spread the word, ask for donations and use our handy toolkit to make fundraising a walk in the park.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-3 flex">
+        <div class="top-hading flex">
+            ABOUT OUR CAMPAIGN
+        </div>
+        <div class="hading flex">
+            <h2>Every year hundreds of</h2>
+            <h2>thousands of dogs are</h2>
+            <h2>abandoned to shelters</h2>
+            <div class="p flex">
+
+                <p>Many of them wont be lucky enough to be adopted and will face the risk of being put down.</p>
+            </div>
+        </div>
+
+        <div class="cantanar flex">
+            <div class="left flex">
+                <p><span class="bold">It does not have to be this way.</span> The solution is pet adoption from shelters
+                    like the ones you'll be supporting during the Good Dog Walk to Freedom campaign.</p>
+                <p>Join thousands of other like-minded dog lovers this July as you directly impact the lives and
+                    well-being of mans best friend one step at a time.
+                </p>
+                <button class="btn">Sing up</button>
+            </div>
+            <div class="right flex">
+                <img src="images/sec-3-right.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="sec-4 flex">
+        <div class="top flex">
+            SO FAR WE'VE RAISED
+        </div>
+        <div class="num">
+            $21,588
+        </div>
+        <div class="cantanar flex">
+
+            <div class="left">
+                <input type="text" class="search" placeholder="Search individual"> <i
+                    class="material-icons searchicon">search</i>
+                <div id="Litem-1">
+                    <div class="item flex">
+                        <img src="images/sec-4-left-1.jpg" alt="dog image">
+                        <div class="text flex">
+                            <h1 class="text">Virginia Woof</h1>
+                            <span class="num">$1,258,668</span>
+                            <div class="percent">
+                                <div class="unfill"><span class="fill"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item flex">
+                        <img src="images/sec-4-co.jpg" alt="dog image">
+                        <div class="text flex">
+                            <h1 class="text">Bark Twain</h1>
+                            <span class="num">$475</span>
+                            <div class="percent">
+                                <div class="unfill"><span class="fill"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item flex">
+                        <img src="images/sec-4-left-2.jpg" alt="dog image">
+                        <div class="text flex">
+                            <h1 class="text">Bark Obama</h1>
+                            <span class="num">$230</span>
+                            <div class="percent">
+                                <div class="unfill"><span class="fill"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item flex">
+                        <img src="images/sec-4-co.jpg" alt="dog image">
+                        <div class="text flex">
+                            <h1 class="text">Stella Bates</h1>
+                            <span class="num">$200</span>
+                            <div class="percent">
+                                <div class="unfill"><span class="fill"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Litem-2">
+                    <div class="item flex">
+                        <img src="images/sec-4-co.jpg" alt="dog image">
+                        <div class="text flex">
+                            <h1 class="text">Dennis Boone</h1>
+                            <span class="num">$145</span>
+                            <div class="percent">
+                                <div class="unfill"><span class="fill"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item flex">
+                        <img src="images/sec-4-co.jpg" alt="dog image">
+                        <div class="text flex">
+                            <h1 class="text">Ulysses Benton</h1>
+                            <span class="num">$6,681</span>
+                            <div class="percent">
+                                <div class="unfill"><span class="fill"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item flex">
+                        <img src="images/sec-4-co.jpg" alt="dog image">
+                        <div class="text flex">
+                            <h1 class="text">Laith Hickman</h1>
+                            <span class="num">$80</span>
+                            <div class="percent">
+                                <div class="unfill"><span class="fill"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item flex">
+                        <img src="images/sec-4-co.jpg" alt="dog image">
+                        <div class="text flex">
+                            <h1 class="text">Flynn Kaufman</h1>
+                            <span class="num">$60</span>
+                            <div class="percent">
+                                <div class="unfill"><span class="fill"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="buttons flex">
+                    <i class="material-icons" id="Lbtn-1">chevron_left</i>
+                    <i class="material-icons" id="Lbtn-2">chevron_right</i>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="right">
+                <input type="text" class="search" placeholder="Search Tearms"> <i
+                    class="material-icons searchicon">search</i>
+                <div id="Ritem-1">
+                    <div class="item flex">
+                        <img src="images/sec-4-right-1.jpg" alt="dog image">
+                        <div class="text flex">
+                            <h1 class="text">Paws</h1>
+                            <span class="num">$300</span>
+                            <div class="percent">
+                                <div class="unfill"><span class="fill"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item flex">
+                        <img src="images/sec-4-right-2.jpg" alt="dog image">
+                        <div class="text flex">
+                            <h1 class="text">Who let the</h1>
+                            <span class="num">$250</span>
+                            <div class="percent">
+                                <div class="unfill"><span class="fill"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item flex">
+                        <img src="images/sec-4-right-3.jpg" alt="dog image">
+                        <div class="text flex">
+                            <h1 class="text">Tearm Here Fur</h1>
+                            <span class="num">$208</span>
+                            <div class="percent">
+                                <div class="unfill"><span class="fill"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item flex">
+                        <img src="images/sec-4-co.jpg" alt="dog image">
+                        <div class="text flex">
+                            <h1 class="text">Godwill Godwill's</h1>
+                            <span class="num">$0</span>
+                            <div class="percent">
+                                <div class="unfill"><span class="fill"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Ritem-2">
+                    <div class="item flex">
+                        <img src="images/sec-4-co.jpg" alt="dog image">
+                        <div class="text flex">
+                            <h1 class="text">Elmo Rivas</h1>
+                            <span class="num">$0</span>
+                            <div class="percent">
+                                <div class="unfill"><span class="fill"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item flex">
+                        <img src="images/sec-4-co.jpg" alt="dog image">
+                        <div class="text flex">
+                            <h1 class="text">Rosemary</h1>
+                            <span class="num">$0</span>
+                            <div class="percent">
+                                <div class="unfill"><span class="fill"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item flex">
+                        <img src="images/sec-4-co.jpg" alt="dog image">
+                        <div class="text flex">
+                            <h1 class="text">Cassady</h1>
+                            <span class="num">$0</span>
+                            <div class="percent">
+                                <div class="unfill"><span class="fill"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item flex">
+                        <img src="images/sec-4-co.jpg" alt="dog image">
+                        <div class="text flex">
+                            <h1 class="text">ray Zhou's</h1>
+                            <span class="num">$0</span>
+                            <div class="percent">
+                                <div class="unfill"><span class="fill"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="buttons flex">
+                    <i class="material-icons" id="Rbtn-1">chevron_left</i>
+                    <i class="material-icons" id="Rbtn-2">chevron_right</i>
+                </div>
+            </div>
+        </div>
+        <div id="buttons">
+            <button class="btn btn-1">Donate</button>
+            <button class="btn btn-2">Sign up</button>
+        </div>
+    </section>
+
+    <section class="sec-5 flex">
+        <div class="top-hading flex">
+            <h1>We're here to help you reach your goal</h1>
+            <p>We'll help you every step of the way with expert fundraising support, a toolkit of super helpful assets,
+                and incentivised milestones for you and your doggo to help you smash your fundraising goal</p>
+        </div>
+        <div class="cantanar flex">
+            <div class="item flex"><img src="images/sec-5-item1.jpg" alt="">
+                <h1>Fundraising toolkit</h1>
+                <p>Once you're registered you'll have access to a range of assets to download and help with your
+                    fundraising efforts.</p>
+            </div>
+            <div class="item flex"><img src="images/sec-5-item2.jpg" alt="">
+                <h1>Our Pooch Community</h1>
+                <p>Join a huge online community of like-minded dog lovers, committed to changing the lives of abandoned
+                    dogs</p>
+            </div>
+            <div class="item flex"><img src="images/sec-5-item3.jpg" alt="">
+                <h1>Top rewards for top dogs</h1>
+                <p>As your fundraising grows you'll start to unlock exclusive Great Dog rewards for you and your buddy.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="sec-6 flex">
+        <div class="left flex">
+            <h1>The impact you'll have</h1>
+            <p>We've got big hairy goals at Good Dog and we're aiming to raise <span class="bold">$500,000</span> . This
+                money will allow us to directly save thousands of dogs lives.
+            </p>
+            <p>
+                We'll achieve this by helping shelters promote the dogs that are available for adoption and advocating
+                for an end to puppy farms.</p>
+        </div>
+        <div class="right flex"><iframe width="560" height="315" src="https://www.youtube.com/embed/ScMzIvxBSi4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe></div>
+
+    </section>
+
+    <section class="sec-7 flex">
+        <div class="top">
+            OUR SPONSORS
+        </div>
+        <div class="cantanar flex">
+            <div class="item"><span class="circle">rrr</span>Sopnsor Logo</div>
+            <div class="item"><span class="circle">rrr</span>Sopnsor Logo</div>
+            <div class="item"><span class="circle">rrr</span>Sopnsor Logo</div>
+            <div class="item"><span class="circle">rrr</span>Sopnsor Logo</div>
+        </div>
+    </section>
+    <footer>
+        <div class="logo item flex"><img src="images/logo.jpg" alt="logo"></div>
+        <div class="socale item flex">
+            <div class="icon">
+
+                <img src="images/facebook.jpg" alt="facebook">
+                <img src="images/twitter.jpg" alt="twitter">
+                <img src="images/linkedin.jpg" alt="linkedin">
+                <img src="images/instagram.jpg" alt="instagram">
+            </div>
+            <div class="link flex">
+                <span>Contact us</span>-<span>Privacy</span>-<span>Terms & Conditions</span>
+            </div>
+        </div>
+        <div class="buttons item flex">
+            <div>
+                <button class="btn btn-1">Donate</button>
+                <button class="btn btn-2">Sing up</button>
+            </div>
+            <div class="a">
+                Powered by Raisely
+            </div>
+        </div>
+
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
